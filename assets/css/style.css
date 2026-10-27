@@ -382,3 +382,19 @@ body {
 .btn-checkout:hover {
     background: #111;
 }
+
+/* ===== ФУТЕР ===== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #111;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+.footer-link {
+    color: #000000; 
+    font-size: 16px;
+}
+
