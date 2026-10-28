@@ -12,6 +12,82 @@ const users = {
     user:  { password: "user",  role: "user"  }
 };
 
+// function registerUser() {
+//     let name = document.getElementById("reg-name").value.trim();
+//     let password = document.getElementById("reg-password").value;
+
+//     if (name == "" || password == "") {
+//         alert("Заполните все поля!");
+//         return;
+//     }
+
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i].name.toLowerCase() == name.toLowerCase()) {
+//             alert("Такой пользователь уже существует!");
+//             return;
+//         }
+//     }
+
+//     users.push({
+//         name: name,
+//         password: password
+//     });
+
+//     localStorage.setItem("users", JSON.stringify(users));
+//     localStorage.setItem("username", name);
+
+//     window.location.href = "profile.html";
+// }
+
+// function loginUser() {
+//     let name = document.getElementById("login-name").value.trim();
+//     let password = document.getElementById("login-password").value;
+
+//     if (name == "" || password == "") {
+//         alert("Введите имя и пароль!");
+//         return;
+//     }
+
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i].name.toLowerCase() == name.toLowerCase() && users[i].password == password) {
+//             localStorage.setItem("username", users[i].name);
+//             window.location.href = "profile.html";
+//             return;
+//         }
+//     }
+
+//     alert("Неверное имя или пароль!");
+// }
+
+// function showProfile() {
+//     let profileName = document.getElementById("profile-name");
+
+//     if (!profileName) {
+//         return;
+//     }
+
+//     if (username == "") {
+//         window.location.href = "login.html";
+//         return;
+//     }
+
+//     profileName.textContent = username;
+
+//     let avatar = document.getElementById("profile-avatar");
+//     avatar.textContent = username[0].toUpperCase();
+
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i].name == username) {
+//             email.textContent = users[i].email;
+//         }
+//     }
+// }
+
+// function logoutUser() {
+//     localStorage.removeItem("username");
+//     window.location.href = "login.html";
+// }
+
 // ====== СОСТОЯНИЕ ======
 let currentUser = null;
 let cart = [];
